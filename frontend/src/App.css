@@ -1,0 +1,51 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: blue;
+}
+.box {
+  color: black;
+  background-color: black;
+}
+input, select {
+  margin: 10px;
+  padding: 8px;
+  width: 80%;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+a {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  color: blue;
+}
+.leave-balance p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  resize: vertical;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

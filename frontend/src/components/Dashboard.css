@@ -1,0 +1,179 @@
+.dashboard-container {
+    display: flex;
+    min-height: 90vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #110769b6; /* Uniform dark background */
+    color: white;
+    padding-top: 1rem;
+    
+    height: 100vh; /* Full height */
+  }
+  
+  .sidebar a {
+    color: white;
+    padding: 10px;
+    display: block;
+   
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background-color: #495057;
+  }
+  
+  .sidebar .active {
+    background-color: #007bff;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+    color: black;
+    background-color: skyblue;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+    
+  .status-approved {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-pending {
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-rejected {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.status-withdrawn {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.view-text {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer; /* Changes the mouse pointer to a hand icon */
+}
+
+.paging-text {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; /* Changes the mouse pointer to a hand icon */
+}
+
+/* Sidebar dropdown menu styling */
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #110769b6;
+  color: white;
+  border: none;
+  padding: 0;
+  margin-top: 5px;
+  z-index: 1050 !important; 
+}
+
+.dropdown-menu.show {
+  max-height: 500px;
+  background-color: #110769b6;
+}
+
+.dropdown-item {
+  padding: 10px; /* Match sidebar link padding */
+  color: white; /* Match sidebar link color */
+  text-decoration: none;
+  display: block;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #495057; /* Match sidebar hover color */
+  border: none;
+}
+.dropdown-item.active{
+  background-color: #007bff;
+}
+.dropdown {
+  position: relative;
+  margin: 0; /* Ensure no extra margin below the dropdown */
+  padding: 0; /* Remove extra padding */
+  border: none;
+}
+
+.sidebar {
+  z-index: 1000; /* Ensure it's above the base layer but under dropdown */
+  position: relative; /* Stack items vertically */
+}
+
+.sidebar > .dropdown-menu {
+  margin-bottom: 0;
+  border: none; 
+  box-shadow: none;/* Add spacing below the dropdown menu */
+}
+
+.sidebar .dropdown-menu {
+  position: static !important;
+  z-index: auto !important;
+  display: block !important; /* only if you control open/close with class */
+  background-color: inherit;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.toggle-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #0056b3;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
